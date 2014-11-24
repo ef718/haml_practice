@@ -1,0 +1,9 @@
+%h1 Animals
+%p Below is a list of animals.
+- @animals.each do |animal|
+  .animal
+    %p.description
+      = animal.name
+      is a #{animal.species}.
+    %img{:height => "250", :src => animal.photo_url}/
+%a{:href => "/dogs"} Just Dogs
